@@ -1,0 +1,16 @@
+@import "tailwindcss";
+body {
+    overflow-x:hidden;
+  }
+  input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  background-color: #2E2E2E !important;
+  color: white !important;
+  -webkit-text-fill-color: white !important;
+  -webkit-box-shadow: 0 0 0px 1000px #2E2E2E inset !important;
+  transition: background-color 5000s ease-in-out 0s;
+}
