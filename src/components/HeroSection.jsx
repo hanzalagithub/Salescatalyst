@@ -19,15 +19,15 @@ const HeroSection = ({ scrollToSection }) => {
   return (
     <div className="relative min-h-screen flex flex-col justify-center px-6 md:px-12 lg:px-4 bg-[#141414] overflow-x-hidden">
       {/* Background SVG */}
-      <div className="absolute inset-0 z-0 opacity-90">
-        <img 
-          src={backgroundSvg} 
-          alt="Background" 
-          className="w-full h-full object-cover"
-        />
-      </div>
+        <div className="absolute inset-0 z-0 opacity-90">
+          <img 
+            src={backgroundSvg} 
+            alt="Background" 
+            className="w-full h-full object-cover md:object-fill lg:object-cover"
+          />
+        </div>
 
-      {/* Navbar with Blur Effect on Scroll */}
+        {/* Navbar with Blur Effect on Scroll */}
       <nav
         className={`fixed top-0 left-0 right-0 flex justify-between items-center py-6 px-6 md:px-12 lg:px-24 z-50 transition-all duration-300 ${
           scrolled
@@ -117,10 +117,17 @@ const HeroSection = ({ scrollToSection }) => {
           </div>
         </div>
 
-        {/* Hero Image */}
-      <div className="relative mt-16 flex justify-center px-2 md:px-0">
-        <img src={heroimg} alt="Hero" className="w-full max-w-7xl object-contain rounded-t-3xl" />
-      </div>
+       {/* Hero Image */}
+<div className="relative mt-16 flex justify-center px-2 md:px-0">
+  <img 
+    src={heroimg} 
+    alt="Hero" 
+    className="w-full max-w-9xl object-contain rounded-t-3xl 
+              lg:max-w-screen-lg 
+              xl:max-w-screen-xl 
+              2xl:max-w-screen-2xl" 
+  />
+</div>
     </div>
   );
 };
