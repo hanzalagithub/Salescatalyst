@@ -1,6 +1,6 @@
 # React + Vite
 
-cd Salescatalys
+cd Salescatalyst
 npm i -g pnpm
 pnpm i
 pnpm add -D vite
